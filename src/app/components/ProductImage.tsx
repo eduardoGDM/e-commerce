@@ -20,7 +20,7 @@ export default function ProductImage({ product, fill }: ProductImageProps) {
           ? "scale-110 blur-3xl grayscale"
           : "scale-100 blur-0 grayscale-0"
       }`}
-      onLoadingComplete={() => setLoading(false)} //indentificar que a img foi carregado e alterar o state apos isso
+      onLoad={() => setLoading(false)} //indentificar que a img foi carregado e alterar o state apos isso
     ></Image>
   ) : (
     <Image
@@ -33,7 +33,7 @@ export default function ProductImage({ product, fill }: ProductImageProps) {
           ? "scale-110 blur-3xl grayscale"
           : "scale-100 blur-0 grayscale-0"
       }`}
-      onLoadingComplete={() => setLoading(false)} //indentificar que a img foi carregado e alterar o state apos isso
+      onLoad={() => setLoading(false)} //indentificar que a img foi carregado e alterar o state apos isso
     ></Image>
   );
 }
