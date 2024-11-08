@@ -101,6 +101,14 @@ export default class AdminNew extends Component {
 
 											<div className="col-sm-4">
 												<div className="form-group fg-line">
+													<TextField type="password" name="password" label="Senha *" margin="normal" variant="outlined"
+														onBlur={handleBlur} onChange={handleChange} value={values.password} helperText={touched.password && errors.password}
+														error={Boolean(touched.password && errors.password)} />
+												</div>
+											</div>
+
+											<div className="col-sm-4">
+												<div className="form-group fg-line">
 													<BetterSelect name="adm_id_group" label="Grupo *" labelWidth={55} blankOption
 														onBlur={handleBlur} onChange={handleChange} value={values.adm_id_group}
 														helperText={touched.adm_id_group && errors.adm_id_group}

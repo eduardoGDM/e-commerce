@@ -768,6 +768,15 @@ export default class EletropostoEdit extends Component {
 											</div>
 										</div>
 
+										<div className="col-sm-3">
+												<div className="form-group fg-line">
+													<button style={{height: '50px',marginTop: '16px'}} type="button" className="btn btn-bold btn-success" onClick={() => this.onAddComodidade()}>
+														<i className={'margin-icon fa fa-plus'}></i>Adicionar comodidade
+													</button>
+												</div>
+											</div>
+										</div>
+
 										<div className="row">
 											{this.state.eletroposto_comodidades?.length > 0 ?
 												<Col sm={12}>
